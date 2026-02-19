@@ -1,113 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Angel ❤️</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel ❤️</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    overflow: hidden;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
 
-.card {
-    background: rgba(255,255,255,0.15);
-    padding: 30px;
-    border-radius: 20px;
-    max-width: 500px;
-    backdrop-filter: blur(10px);
-    animation: fadeIn 2s ease-in-out;
-}
+    .card {
+      background: rgba(0,0,0,0.25);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      animation: fadeIn 2s ease;
+    }
 
-h1 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
-}
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ffecec;
+    }
 
-p {
-    font-size: 1.1em;
-    line-height: 1.7;
-}
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
 
-.heart {
-    font-size: 3em;
-    animation: beat 1.5s infinite;
-}
+    .heart {
+      font-size: 3em;
+      animation: beat 1.5s infinite;
+    }
 
-@keyframes beat {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.3); }
-}
+    audio {
+      width: 100%;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
 
-.floating-hearts span {
-    position: absolute;
-    font-size: 24px;
-    animation: float 10s linear infinite;
-    opacity: 0.8;
-}
-
-@keyframes float {
-    0% { transform: translateY(100vh) scale(0.5); }
-    100% { transform: translateY(-10vh) scale(1.2); }
-}
-
-</style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="floating-hearts">
-    <span style="left:10%;">❤️</span>
-    <span style="left:30%;">💖</span>
-    <span style="left:50%;">💕</span>
-    <span style="left:70%;">💘</span>
-    <span style="left:90%;">💓</span>
-</div>
-
-<div class="card">
+  <div class="card">
     <div class="heart">❤️</div>
+
     <h1>Angel</h1>
 
     <p>
-        From the moment you came into my life, everything changed for the better.
-        You became my peace, my happiness, my comfort, and my safe place.
+      My love, from the moment you came into my life,
+      everything changed for the better.  
+      Your smile lights up my darkest days and your love
+      fills my heart with peace and happiness.
+      <br><br>
+      I promise to love you endlessly, protect your heart,
+      and stand by your side through everything.
+      <br><br>
+      Angel, will you be mine forever? 💕
     </p>
 
-    <p>
-        I want you to know that my love for you is real, deep, and endless.
-        I promise to cherish you, respect you, protect your heart, and always be there for you.
-    </p>
+    <audio controls autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
-    <p>
-        Angel, will you be mine forever?
-        I want a future with you — full of love, laughter, loyalty, and beautiful memories.
-    </p>
-
-    <p>
-        I love you more than words can ever express. 💞
-    </p>
-
-    <div class="heart">💖</div>
-</div>
-
-<!-- Background Music -->
-<audio autoplay loop>
-    <source src="https://docs.google.com/uc?export=download&id=1BQ2mZ4STY0QeKpEnKnFZ0B6DP6-1I8pZ" type="audio/mpeg">
-</audio>
+    <p style="font-size: 0.9em;">🎵 Some of Your Love – PARTYNEXTDOOR</p>
+  </div>
 
 </body>
 </html>
