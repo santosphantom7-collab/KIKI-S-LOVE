@@ -1,72 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kiki's Love 💖</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiki ❤️ My Love</title>
 
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(135deg, #ff758c, #ff7eb3);
       min-height: 100vh;
+      overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
       color: white;
       text-align: center;
-      padding: 20px;
     }
 
     .card {
       background: rgba(255,255,255,0.15);
-      backdrop-filter: blur(12px);
+      backdrop-filter: blur(10px);
       border-radius: 20px;
-      padding: 40px 30px;
-      max-width: 700px;
-      box-shadow: 0 0 40px rgba(0,0,0,0.2);
-      animation: fadeIn 1.5s ease-in-out;
+      padding: 30px;
+      max-width: 350px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+      animation: fadeIn 2s ease;
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.5em;
       margin-bottom: 10px;
-    }
-
-    h2 {
-      font-weight: normal;
-      margin-bottom: 25px;
-      opacity: 0.9;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
     }
 
     p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 15px;
+      font-size: 1.1em;
+      line-height: 1.6;
     }
 
     .heart {
-      font-size: 3rem;
-      animation: pulse 1.5s infinite;
-      margin: 15px 0;
+      position: fixed;
+      bottom: -10px;
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.7;
     }
 
-    footer {
-      margin-top: 25px;
-      font-size: 1rem;
-      opacity: 0.8;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.3); }
-      100% { transform: scale(1); }
+    @keyframes floatUp {
+      from { transform: translateY(0) scale(1); opacity: 1; }
+      to { transform: translateY(-110vh) scale(1.5); opacity: 0; }
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .signature {
+      margin-top: 15px;
+      font-style: italic;
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -74,44 +69,43 @@
 <body>
 
   <div class="card">
-    <h1>💖 Kiki’s Love 💖</h1>
-    <h2>A Love Written From My Heart</h2>
-
-    <div class="heart">❤️</div>
+    <h1>Kiki ❤️</h1>
 
     <p>
-      From the moment you entered my life, everything became brighter and more meaningful.
-      You are my peace, my comfort, my happiness, and my safe place.
+      From the moment you walked into my life, everything changed.
+      You became my peace, my happiness, my safe place.
     </p>
 
     <p>
-      In your presence, I feel calm. In your smile, I find warmth.
-      In your love, I discover strength. You make ordinary moments magical
-      and difficult days easier to carry.
+      I promise to love you endlessly, to protect your heart,
+      to stand by your side, and to choose you every single day.
     </p>
 
     <p>
-      I choose you — not just today, but every single day.
-      I choose patience, honesty, loyalty, and unconditional love.
-      I choose to stand beside you, to support your dreams,
-      and to walk this journey with you.
+      Will you be mine forever? 💍
     </p>
 
-    <p>
-      My love for you is steady, deep, and true.
-      Not fragile. Not temporary. Just real.
-    </p>
-
-    <div class="heart">💞</div>
-
-    <p style="font-size: 1.3rem; font-weight: bold;">
-      I choose you. Always.
-    </p>
-
-    <footer>
-      Made with love ❤️ Forever & Always
-    </footer>
+    <div class="signature">
+      — With all my love 💕
+    </div>
   </div>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerHTML = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = 4 + Math.random() * 4 + 's';
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+
+    setInterval(createHeart, 400);
+  </script>
 
 </body>
 </html>
