@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kiki's Love 💖</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 700px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .heart {
+      font-size: 3rem;
+      animation: pulse 1.5s infinite;
+      margin: 15px 0;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>💖 Kiki’s Love 💖</h1>
+    <h2>A Love Written From My Heart</h2>
+
+    <div class="heart">❤️</div>
+
+    <p>
+      From the moment you entered my life, everything became brighter and more meaningful.
+      You are my peace, my comfort, my happiness, and my safe place.
+    </p>
+
+    <p>
+      In your presence, I feel calm. In your smile, I find warmth.
+      In your love, I discover strength. You make ordinary moments magical
+      and difficult days easier to carry.
+    </p>
+
+    <p>
+      I choose you — not just today, but every single day.
+      I choose patience, honesty, loyalty, and unconditional love.
+      I choose to stand beside you, to support your dreams,
+      and to walk this journey with you.
+    </p>
+
+    <p>
+      My love for you is steady, deep, and true.
+      Not fragile. Not temporary. Just real.
+    </p>
+
+    <div class="heart">💞</div>
+
+    <p style="font-size: 1.3rem; font-weight: bold;">
+      I choose you. Always.
+    </p>
+
+    <footer>
+      Made with love ❤️ Forever & Always
+    </footer>
+  </div>
+
+</body>
+</html>
