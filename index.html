@@ -1,93 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Angel ❤️</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  
   <style>
-    body{
-      margin:0;
-      height:100vh;
-      background:linear-gradient(135deg,#ff758c,#ff7eb3);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      font-family:'Segoe UI',sans-serif;
-      overflow:hidden;
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
     }
 
-    .card{
-      background:white;
-      padding:30px;
-      border-radius:20px;
-      max-width:90%;
-      text-align:center;
-      box-shadow:0 10px 30px rgba(0,0,0,.25);
-      animation:fadeIn 2s ease;
+    .card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px 25px;
+      max-width: 420px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      animation: fadeIn 2s ease;
     }
 
-    h1{
-      color:#ff2e63;
-      font-size:2.5em;
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3em;
+      margin-bottom: 10px;
     }
 
-    p{
-      font-size:1.1em;
-      line-height:1.7;
-      color:#444;
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
     }
 
-    .heart{
-      position:fixed;
-      bottom:-10px;
-      font-size:20px;
-      animation:floatUp 6s linear infinite;
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #ff4d6d;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
     }
 
-    @keyframes floatUp{
-      from{transform:translateY(0);opacity:1;}
-      to{transform:translateY(-100vh);opacity:0;}
+    .btn:hover {
+      transform: scale(1.08);
     }
 
-    @keyframes fadeIn{
-      from{opacity:0;transform:scale(.9);}
-      to{opacity:1;transform:scale(1);}
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .heart {
+      position: absolute;
+      color: rgba(255,255,255,0.8);
+      font-size: 18px;
+      animation: floatUp 6s linear infinite;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(100vh); opacity: 1; }
+      to { transform: translateY(-10vh); opacity: 0; }
     }
   </style>
 </head>
+
 <body>
 
-<div class="card">
-  <h1>Angel 💖</h1>
-  <p>
-    From the moment you came into my life, everything changed.
-    Your smile lights up my darkest days, and your voice is my favorite sound.
-    <br><br>
-    I promise to love you, protect you, and stand by you through every season of life.
-    You are my heart, my peace, and my forever.
-    <br><br>
-    Will you be mine forever? 💕
-  </p>
-</div>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/02/23/audio_9f52f5d90c.mp3" type="audio/mpeg">
+  </audio>
 
-<audio autoplay loop>
-  <source src="https://files.catbox.moe/7u2c7g.mp3" type="audio/mpeg">
-</audio>
+  <div class="card">
+    <h1>Angel ❤️</h1>
+    <p>
+      From the moment you entered my life, everything changed for the better.
+      Your smile lights up my world, and your love gives my heart peace.
+      I promise to cherish you, protect you, and love you endlessly.
+      <br><br>
+      Will you be mine forever? 💍
+    </p>
+    <button class="btn" onclick="showLove()">Click Me 💕</button>
+  </div>
 
-<script>
-  function createHeart(){
-    const heart=document.createElement("div");
-    heart.className="heart";
-    heart.innerHTML="❤️";
-    heart.style.left=Math.random()*100+"vw";
-    heart.style.fontSize=(Math.random()*20+15)+"px";
-    document.body.appendChild(heart);
+  <script>
+    function showLove() {
+      alert("I Love You More Than Words Can Say ❤️");
+    }
 
-    setTimeout(()=>heart.remove(),6000);
-  }
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = (Math.random() * 20 + 10) + "px";
+      heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
 
-  setInterval(createHeart,300);
-</script>
+      document.body.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 6000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
 
 </body>
 </html>
