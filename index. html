@@ -8,57 +8,40 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(120deg, #ff9a9e, #fad0c4);
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
       text-align: center;
-      color: #fff;
+      color: white;
     }
 
     .card {
       background: rgba(0,0,0,0.25);
-      padding: 30px;
+      padding: 30px 25px;
       border-radius: 20px;
-      max-width: 400px;
+      max-width: 500px;
       width: 90%;
       box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-      animation: fadeIn 2s ease;
     }
 
     h1 {
+      margin: 0;
       font-size: 2.5em;
-      margin-bottom: 10px;
-      color: #ffecec;
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-weight: 400;
+      color: #ffe6ee;
     }
 
     p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .heart {
-      font-size: 3em;
-      animation: beat 1.5s infinite;
-    }
-
-    audio {
-      width: 100%;
+      font-size: 1.05em;
+      line-height: 1.7;
       margin-top: 15px;
-      border-radius: 10px;
-    }
-
-    @keyframes beat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -66,28 +49,13 @@
 <body>
 
   <div class="card">
-    <div class="heart">❤️</div>
-
-    <h1>Angel</h1>
+    <h1>KIKI-S-LOVE 💖</h1>
+    <h2>Angel</h2>
 
     <p>
-      My love, from the moment you came into my life,
-      everything changed for the better.  
-      Your smile lights up my darkest days and your love
-      fills my heart with peace and happiness.
-      <br><br>
-      I promise to love you endlessly, protect your heart,
-      and stand by your side through everything.
-      <br><br>
-      Angel, will you be mine forever? 💕
+      A descriptive love story filled with assurance, asking her to be mine forever,
+      and reassuring her of my love and commitment to her.
     </p>
-
-    <audio controls autoplay loop>
-      <source src="music.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-
-    <p style="font-size: 0.9em;">🎵 Some of Your Love – PARTYNEXTDOOR</p>
   </div>
 
 </body>
